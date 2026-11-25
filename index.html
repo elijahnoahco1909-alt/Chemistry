@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Periodic Table Auto Layout</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+        "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <div id="scene-container"></div>
+
+  <nav id="menu" aria-label="Layout modes">
+    <button class="layout-btn active" data-layout="table">table</button>
+    <button class="layout-btn" data-layout="sphere">sphere</button>
+    <button class="layout-btn" data-layout="helix">helix</button>
+    <button class="layout-btn" data-layout="grid">grid</button>
+  </nav>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
